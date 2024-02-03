@@ -12,7 +12,7 @@ interface galleryProps {
 
 const Gallery: React.FC<galleryProps> = async ({ images }) => {
   return (
-    <Tab.Group as="div" className="flex flex-col-reverse">
+    <Tab.Group as="div" className="flex items-center flex-col-reverse">
       <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
         <Tab.List className="grid grid-cols-4 gap-4">
           {images.map((image) => (
